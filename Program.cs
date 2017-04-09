@@ -18,7 +18,7 @@ namespace lab6
                 SentenceDetector detector = new SentenceDetectorME(smodel);
                 string[] sents = detector.sentDetect(input.ReadLine());
                 foreach (string sent in sents)
-                    output.Write(sent + " ");
+                    output.WriteLine(sent);
             }
         }
         static void Main(string[] args)
